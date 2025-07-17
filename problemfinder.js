@@ -64,5 +64,5 @@ Object.entries(endpointCounts)
   .slice(0, 10)
   .forEach(([endpoint, count]) => console.log(`${endpoint}: ${count} hits`));
 
-console.log("\n\n");
+console.log("\n\nTESTED!\n");
 //adds extra newlines to provide space to separate the paragaphs
