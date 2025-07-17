@@ -58,8 +58,11 @@ Object.entries(ipStats)
 console.log("\nMOST SUSPICIOUS IPS (ORDERED BY REQ RATE):\n");
 [...suspiciousIPs].forEach(ip => console.log(ip));
 
-console.log("\nMOST USED ENDPOINTS:\n");
+console.log("\nMOST USED ENDPOINTS (ORDERED BY HITS):\n");
 Object.entries(endpointCounts)
   .sort((a, b) => b[1] - a[1])
   .slice(0, 10)
   .forEach(([endpoint, count]) => console.log(`${endpoint}: ${count} hits`));
+
+console.log("\n\n");
+//adds extra newlines to provide space to separate the paragaphs
